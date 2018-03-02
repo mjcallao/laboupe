@@ -30,7 +30,7 @@
         <div class="row">
             <div class="form-group">
                 <div class="col-md-1">
-                    <label for="txtNombre" class="control-label">Nombre:</label>
+                    <label for="txtNombre" class="control-label">Producto:</label>
                 </div>
                 <div class="col-xs-10 col-sm-8 col-md-6 col-lg-3">
                     <input class="form-control" type="text" id="txtNombre" name="txtNombre" placeholder="Nombre" onfocus='ocultaError("errorNombre")'>
@@ -42,7 +42,7 @@
         <div class="row">
             <div class="form-group">
                 <div class="col-md-1">
-                    <label for="txtApellido" class="control-label">Apellido:</label>
+                    <label for="txtApellido" class="control-label">Marca:</label>
                 </div>
                 <div class="col-xs-10 col-sm-8 col-md-6 col-lg-3">
                     <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Apellido" onfocus='ocultaError("errorApellido")'>
@@ -50,16 +50,35 @@
                 </div>
             </div>
         </div>
-
-           <!-- div de la fila de la edad -->
+       <div class="row">
+            <div class="form-group">
+                <div class="col-md-1">
+                 <div>
+                    Categoría
+                    <select name="categoria">
+                            
+                        <option value="enlatados">Enlatados</option>
+                        <br>
+                        <option value="golosinas">Golosinas</option>
+                        <br>
+                        <option value="snacks">Snacks</option>
+                        <br>
+                        <option value="prodsecos">Productos Secos</option>
+                    </select>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    
+           <!-- div de la fila de la stock -->
         <div class="row">
             <div class="form-group">
                 <div class="col-md-1">
-                    <label for="txtEdad" class="control-label">Edad:</label>
+                    <label for="txtstock" class="control-label">Stock:</label>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                    <input type="number" class="form-control" id="txtEdad" name="txtEdad" placeholder="Edad" onfocus='ocultaError("errorEdad")'>
-                    <p id="errorEdad"></p>
+                    <input type="number" class="form-control" id="txtstock" name="txtstock" placeholder="stock" onfocus='ocultaError("errorstock")'>
+                    <p id="errorstock"></p>
                 </div>
             </div>
         </div>
